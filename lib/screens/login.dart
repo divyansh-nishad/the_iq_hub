@@ -25,22 +25,40 @@ class LoginPage extends StatelessWidget {
           ),
           SizedBox(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * 0.2,
+            height: MediaQuery.of(context).size.height * 0.1,
+          ),
+          const Text(
+            'Welcome to my to-do app!',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              'A Flutter app with Firebase integration to perform CRUD operations',
+              textAlign: TextAlign.center,
+            ),
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height * 0.1,
           ),
           GestureDetector(
             onTap: signInWithGoogle,
             child: Container(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(5),
               margin: const EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
                 // color: Colors.black,
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(50),
                 gradient: const LinearGradient(
-                  colors: [Colors.pinkAccent, Colors.deepPurpleAccent],
+                  colors: [Colors.blue, Colors.deepPurpleAccent],
                 ),
               ),
               width: MediaQuery.of(context).size.width * 0.5,
-              height: MediaQuery.of(context).size.height * 0.08,
+              height: MediaQuery.of(context).size.height * 0.07,
               child: const Center(
                 child: Text(
                   'Sign in with Google',
