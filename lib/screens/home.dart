@@ -67,14 +67,17 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('@${_auth.currentUser!.email!}'),
+        title: Text('Your Tasks', style: TextStyle(color: Colors.black)),
+        centerTitle: true,
+        shadowColor: Colors.grey,
+        backgroundColor: Colors.transparent,
         elevation: 0,
         actions: [
           IconButton(
             onPressed: () {
               signUserOut();
             },
-            icon: Icon(Icons.logout),
+            icon: Icon(Icons.logout, color: Colors.red),
           ),
         ],
       ),
@@ -94,7 +97,20 @@ class _HomePageState extends State<HomePage> {
           }
 
           if (snapshot.data!.docs.isEmpty) {
-            return Center(child: Text('No tasks added yet'));
+            return Center(
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                  Icon(
+                    Icons.add_circle,
+                    color: Colors.grey[700],
+                    size: 75,
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Text('No tasks added yet')
+                ]));
           }
 
           return ListView.builder(

@@ -32,12 +32,21 @@ class ToDoTile extends StatelessWidget {
           ],
         ),
         child: Container(
-          padding: EdgeInsets.all(24),
+          padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
           decoration: BoxDecoration(
-            color: Colors.lightBlueAccent.shade100,
+            color: Colors.white,
             borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                blurRadius: 10.0,
+                spreadRadius: 5.0,
+                offset: Offset(0.0, 0.0),
+              ),
+            ],
           ),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               // checkbox
               Checkbox(
@@ -55,6 +64,10 @@ class ToDoTile extends StatelessWidget {
                       : TextDecoration.none,
                 ),
               ),
+              Icon(
+                Icons.arrow_back_ios,
+                color: Colors.grey,
+              )
             ],
           ),
         ),

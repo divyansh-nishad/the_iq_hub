@@ -3,17 +3,18 @@ import 'package:flutter/material.dart';
 class MyButton extends StatelessWidget {
   final String text;
   VoidCallback onPressed;
-  MyButton({
-    super.key,
-    required this.text,
-    required this.onPressed,
-  });
+  Color colors;
+  MyButton(
+      {super.key,
+      required this.text,
+      required this.onPressed,
+      required this.colors});
 
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: onPressed,
-      color: Theme.of(context).primaryColor,
+      color: colors,
       child: Text(text),
     );
   }
