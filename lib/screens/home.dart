@@ -5,6 +5,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('The IQ Hub'),
+      ),
+      body: const Center(
+        child: Text('IQ Hub Home Page'),
+      ),
+    );
   }
 }

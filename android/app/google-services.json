@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "521991486354",
+    "project_id": "the-iq-hub",
+    "storage_bucket": "the-iq-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521991486354:android:d2c5727dcf7df113611f4b",
+        "android_client_info": {
+          "package_name": "com.example.the_iq_hub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521991486354-k4tpp3qv1g5r72hmegfc0t0l08i546p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTNmFHMfobcPOd1BJwB3ZV2c22NCVYPf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521991486354-k4tpp3qv1g5r72hmegfc0t0l08i546p4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "521991486354-48nch8092ebkjlvf2pm83gsdafudiuap.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.theIqHub"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
